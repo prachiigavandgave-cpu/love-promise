@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Promise to You 💍</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding-top: 50px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 40px;
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      font-size: 22px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .heart {
+      font-size: 80px;
+      animation: beat 1s infinite;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #ff4d6d;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    @keyframes beat {
+      0% {transform: scale(1);}
+      50% {transform: scale(1.3);}
+      100% {transform: scale(1);}
+    }
+
+    @keyframes glow {
+      from {text-shadow: 0 0 10px pink;}
+      to {text-shadow: 0 0 25px white;}
+    }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="love.mp3" type="audio/mp3">
+</audio>
+
+<div class="heart">❤️</div>
+<h1>Happy Promise Day Baby</h1>
+
+<p id="promiseText">
+I don’t promise forever.  
+I promise effort — every single day.  
+I promise to choose you, even on hard days.
+</p>
+
+<button onclick="showPromise()">Click for My Real Promise 🥺</button>
+
+<script>
+function showPromise() {
+  document.getElementById("promiseText").innerHTML =
+  "I promise to stay loyal, honest, and yours. 💍<br>Even if distance, fights, or problems come, I won’t give up on us. ❤️";
+}
+</script>
+
+</body>
+</html>
